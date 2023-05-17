@@ -2,7 +2,7 @@
 #include "CarPart.cpp"
 #include "InsufficientFuelError.cpp"
 
-FuelTank::FuelTank()
+FuelTank::FuelTank() : CarPart(), fullCapacity(0)
 {
 }
 

@@ -1,7 +1,7 @@
 #include "Tyre.h"
 #include "CarPart.cpp"
 
-Tyre::Tyre()
+Tyre::Tyre() : CarPart(), width(0), profile(0), size(0)
 {
 }
 

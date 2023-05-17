@@ -1,7 +1,7 @@
 #include "Engine.h"
 #include "CarPart.cpp"
 
-Engine::Engine()
+Engine::Engine() : CarPart(), hp(0)
 {
 }
 

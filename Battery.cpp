@@ -2,7 +2,7 @@
 #include "CarPart.cpp"
 #include <cstring>
 
-Battery::Battery()
+Battery::Battery() : CarPart(), capacity(0), batteryId("\0")
 {
 }
 
