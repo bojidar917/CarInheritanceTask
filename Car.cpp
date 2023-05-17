@@ -45,12 +45,6 @@ bool Car::checkFuel(double km)
 
 Car *dragRace(Car *car1, Car *car2)
 {
-    // Ако една от колите няма достатъчно гориво, за да измине разстоянието, другата печели.
-
-    // Ако и двете коли нямат достатъчно гориво, да се върне nullptr.
-
-    // Ако и двете коли имат достатъчно гориво, победителят се определя от съотношението:
-
     const double dragDistance = 0.4;
 
     if (car1->checkFuel(dragDistance) && car2->checkFuel(dragDistance))
