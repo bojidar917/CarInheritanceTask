@@ -14,6 +14,8 @@ public:
     void use(double amount);
     void fill(double amount);
 
+    bool checkFuel(double km, int hp, double carWeight);
+
 private:
     double fullCapacity;
     double currentFuel;

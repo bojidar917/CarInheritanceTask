@@ -63,6 +63,18 @@ void FuelTank::fill(double amount)
         this->currentFuel += amount;
 }
 
+bool FuelTank::checkFuel(double km, int hp, double carWeight)
+{
+    double fuelPerKilometer = (log(hp) / log(3) + log(carWeight) / log(8)) / 100;
+
+    double usedFuel = km * fuelPerKilometer;
+
+    if (this->currentFuel > usedFuel)
+        return true;
+
+    return false;
+}
+
 void FuelTank::setFullCapacity(double amount)
 {
     if (amount < 0)
